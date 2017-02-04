@@ -1,0 +1,15 @@
+{
+  "name": "puppet-vim",
+  "version": "1.0.0",
+  "author": "Arjun ( Initially by https://github.com/ricciocri/vimrc )",
+  "summary": "Installing Vim",
+  "license": "Apache-2.0",
+  "source": "https://github.com/arjunprabhulal/vim",
+  "project_page": "https://github.com/arjunprabhulal/vim",
+  "issues_url": "https://github.com/arjunprabhulal/vim/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
