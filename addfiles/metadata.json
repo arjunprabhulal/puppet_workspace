@@ -1,0 +1,17 @@
+{
+  "name": "arjun-files",
+  "version": "1.0.0",
+  "author": "arjun",
+  "summary": "Adding files module for creating , deleting files",
+  "license": "Apache 2.0",
+  "source": "https://github.com/arjunprabhulal/puppet_workspace/",
+  "project_page": "https://github.com/arjunprabhulal/puppet_workspace/",
+  "issues_url": "https://github.com/arjunprabhulal/puppet_workspace/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
