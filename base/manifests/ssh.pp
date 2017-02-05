@@ -1,4 +1,6 @@
-class base::ssh {
+class base::ssh  {
+ 
+  
   package { 'openssh-package':
           name   => 'openssh-server',
           ensure => present,
