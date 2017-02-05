@@ -12,7 +12,7 @@ class base::variables {
       $topscope = "New Top Scope Value"
       $nodescope = "New Node SCOPE variable"
 
-      notify { "${topscope} is your TOP Scope": }
+      notify { "${::topscope} is your TOP Scope": }
       notify { "${nodescope} is your NODE SCOPE": }
       notify { "${local_variable} is your LOCAL SCOPE " : }
       notify { "${::operatingsystem} is your Operating System":}
