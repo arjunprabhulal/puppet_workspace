@@ -36,6 +36,29 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class addfiles {
+  
+  File {
+        owner => root,
+        group => finance,
+        mode  => 0660,
+  }
+
+  $homedir = "/root"
+
+  file {"${homedir}/file1":
+          content => "This is my file content File1"
+  }
+
+  file { "${homedir}/file2":
+          content => "This is my file content File 2"
+  }
+
+  file { "${homedir}/file3":
+          content => "This is my file content File 3",
+          owner   => 'admin',
+          group  => root,
+  }
+
   file { '/root/motd':
         ensure  => present,
         source  => 'puppet:///modules/addfiles/motd',
