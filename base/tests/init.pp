@@ -10,4 +10,3 @@
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
 include base
-include base::ssh
