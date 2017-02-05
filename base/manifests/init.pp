@@ -36,7 +36,12 @@
 # Copyright 2017 Your name here, unless otherwise noted.
 #
 class base {
-    package { ['tree','bind-utils']:
+    $dnsutil = $osfamily ? {
+        'Redhat' => 'bind-utils',
+        'Debian' => 'dnsutils',
+    }
+
+    package { ['tree',$dnsutil]:
               ensure => present,
     }
 
