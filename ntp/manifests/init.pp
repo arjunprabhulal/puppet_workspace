@@ -35,11 +35,11 @@
 #
 # Copyright 2017 Your name here, unless otherwise noted.
 #
-class ntp {
-    package { 'ntp': 
+class ntp ( $package = $ntp::params::package_name) inherits ntp::params {
+    package { 'ntp':
+          name   => $package,
           ensure => present,
   }
-  include ntp::params
-  include ntp::file
+  class { 'ntp::file': }
   include ntp::service
-  } 
+} 
